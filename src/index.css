@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: theme("fontFamily.sans");
+  background-color: theme("colors.brand.sand");
+  color: theme("colors.brand.navy");
+}
+
+h1, h2, h3, h4 {
+  font-family: theme("fontFamily.display");
+}
+
+.gradient-blur {
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  filter: blur(120px);
+  opacity: 0.45;
+  z-index: 0;
+}
