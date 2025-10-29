@@ -9,14 +9,6 @@ import {
   Users,
 } from "lucide-react";
 
-const navLinks = [
-  { label: "Home", href: "#home" },
-  { label: "Services", href: "#services" },
-  { label: "About", href: "#about" },
-  { label: "Testimonials", href: "#testimonials" },
-  { label: "Contact", href: "#contact" },
-];
-
 const navIcons = [ShieldCheck, ScrollText, Users];
 
 export const NavigationBar = () => {
@@ -49,65 +41,17 @@ export const NavigationBar = () => {
             </div>
           </a>
 
-          <nav className="hidden lg:flex items-center gap-8">
-            {navLinks.map((item) => (
-              <a
-                key={item.href}
-                href={item.href}
-                className="text-sm font-medium text-brand-navy/70 transition-all duration-200 hover:text-brand-royal hover:-translate-y-0.5"
-              >
-                {item.label}
-              </a>
-            ))}
-          </nav>
-
           <div className="hidden lg:flex items-center gap-2 rounded-full bg-brand-navy px-5 py-2 text-white shadow-glow">
             <PhoneCall className="h-4 w-4" />
             <span className="text-sm font-semibold">+91 98765 43210</span>
           </div>
 
-          <button
-            type="button"
-            className="inline-flex lg:hidden items-center justify-center rounded-xl border border-brand-navy/10 bg-white/80 p-2 shadow-sm"
-            onClick={() => setOpen((prev) => !prev)}
-            aria-label="Toggle navigation"
-          >
-            {open ? (
-              <X className="h-5 w-5 text-brand-navy" />
-            ) : (
-              <Menu className="h-5 w-5 text-brand-navy" />
-            )}
-          </button>
+          {/* Removed the mobile menu button since there are no navigation items */}
+          <div className="lg:hidden"></div>
         </div>
 
-        <AnimatePresence>
-          {open && (
-            <motion.div
-              initial={{ opacity: 0, height: 0 }}
-              animate={{ opacity: 1, height: "auto" }}
-              exit={{ opacity: 0, height: 0 }}
-              transition={{ duration: 0.3 }}
-              className="mt-3 overflow-hidden rounded-2xl border border-white/60 bg-white/95 shadow-lg backdrop-blur"
-            >
-              <div className="px-6 py-4 space-y-4">
-                {navLinks.map((item) => (
-                  <a
-                    key={item.href}
-                    href={item.href}
-                    className="block text-base font-medium text-brand-navy/80 transition-colors hover:text-brand-royal"
-                    onClick={() => setOpen(false)}
-                  >
-                    {item.label}
-                  </a>
-                ))}
-                <div className="flex items-center gap-2 rounded-xl bg-brand-navy px-4 py-3 text-white">
-                  <PhoneCall className="h-4 w-4" />
-                  <span className="text-sm font-semibold">+91 98765 43210</span>
-                </div>
-              </div>
-            </motion.div>
-          )}
-        </AnimatePresence>
+       
+
       </div>
 
       {/* Changed from mapping all navIcons to only showing one "Trusted Legal Partner" element */}
