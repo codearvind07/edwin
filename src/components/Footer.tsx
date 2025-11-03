@@ -1,41 +1,23 @@
 import { motion } from "framer-motion";
-import { Linkedin, Mail, PhoneCall, Scale, Twitter, Instagram } from "lucide-react";
+import { Mail, PhoneCall, Scale } from "lucide-react";
 
 const footerLinks = [
   {
     title: "Corporate Office",
-    description: "A-5, Pamposh Enclave, GK-1, South Delhi, New Delhi 110048, IN",
+    description: "A-5, G/F, PAMPOSH ENCLAVE, NEAR NEHRU PLACE FLYOVER GK-1, SOUTH DELHI, DELHI, Delhi 110048",
     icon: Scale,
   },
   {
-    title: "Connect",
-    description: "advisory@edwincorporate.com",
+    title: "Email",
+    description: "lawfirmedwincoe@gmail.com",
     icon: Mail,
-    href: "mailto:advisory@edwincorporate.com",
+    href: "mailto:lawfirmedwincoe@gmail.com",
   },
   {
     title: "Call",
-    description: "+91 98765 43210",
+    description: "+91 9911169979",
     icon: PhoneCall,
-    href: "tel:+919876543210",
-  },
-];
-
-const socials = [
-  {
-    label: "LinkedIn",
-    href: "https://www.linkedin.com/company/edwin-corporate-law-firm",
-    icon: Linkedin,
-  },
-  {
-    label: "X",
-    href: "https://twitter.com/edwincorporate",
-    icon: Twitter,
-  },
-  {
-    label: "Instagram",
-    href: "https://www.instagram.com/edwincorporate",
-    icon: Instagram,
+    href: "tel:+919911169979",
   },
 ];
 
@@ -56,20 +38,6 @@ export const Footer = () => {
             <p className="mt-4 text-sm text-white/70">
               We support enterprises with corporate law, IP protection, taxation, and compliance solutions across India.
             </p>
-            <div className="mt-8 flex flex-wrap items-center gap-3">
-              {socials.map(({ label, href, icon: Icon }) => (
-                <a
-                  key={label}
-                  href={href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-xs font-semibold text-white/90 transition hover:bg-white/20"
-                >
-                  <Icon className="h-4 w-4" />
-                  {label}
-                </a>
-              ))}
-            </div>
           </div>
 
           <div className="grid gap-6">

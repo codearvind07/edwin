@@ -27,21 +27,14 @@ export const HeroSection = () => {
               href="#home"
               className="flex items-center gap-3 text-brand-navy"
             >
-              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-brand-blue via-brand-royal to-brand-navy text-white shadow-lg sm:h-12 sm:w-12">
-                <ShieldCheck className="h-5 w-5 sm:h-6 sm:w-6" />
-              </div>
-              <div>
-                <p className="font-display text-base leading-none sm:text-xlg">Edwin Corporate</p>
-                <p className="text-[0.65rem] uppercase tracking-[0.3em] text-black sm:text-xs">
-                  Law Firm
-                </p>
+              <div className="flex items-center justify-center">
+                <img 
+                  src="/edwinlogo.png" 
+                  alt="Edwin Logo" 
+                />
               </div>
             </a>
           </div>
-
-         
-
-          
         </div>
 
         {/* Mobile menu dropdown */}

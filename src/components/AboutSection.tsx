@@ -44,13 +44,13 @@ export const AboutSection = () => {
             About Us
           </div>
           <h2 className="mt-6 font-display text-4xl leading-tight text-brand-navy sm:text-5xl">
-            Edwin Corporate Law Firm — your trusted partner for complete business solutions
+            About Edwin Corporate Law
           </h2>
           <p className="mt-6 text-base leading-relaxed text-brand-navy/70">
-            From incorporation to intellectual property enforcement, Edwin Corporate Law Firm provides a single window for every critical compliance and advisory need. Our client-first ethos ensures consistent guidance through evolving regulations and market shifts.
+            Edwin Corporate Law Firm Founded in 2014, Edwin Corporate Law Firm has been providing the Services All India area with the vision to provide a complete business solution. Edwin Corporate has a dedicated team of professionals including lawyers, Intellectual Property Experts, Chartered Accountants and Company Secretariats with the specific industry expertise, resources, and commitment required to meet all our client's requirements.
           </p>
           <p className="mt-5 text-base leading-relaxed text-brand-navy/70">
-            We combine legal precision with commercial insight. Whether it is GST structuring, corporate governance, or trademark defense, our experts align strategies with your growth ambitions.
+            We have the requisite expertise and are well-positioned to provide comprehensive legal services that meet the changing needs of our clients. We can assure you of best services on matters of GST, IPR(Trademark, Patent, Copyright, Geographical Indication, Design), ITR, ROC, Company/LLP Incorporation, Trust/Society, 80G/12AA, ISO, IEC Code, Legal Matters and Books of Accounts Auditing and Complete Financial & Taxation Consultancy, which is handled by our dedicated team of experts.
           </p>
         </motion.div>
         <motion.div

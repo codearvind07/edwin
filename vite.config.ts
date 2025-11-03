@@ -7,7 +7,7 @@ export default defineConfig({
   root: '.', // Set the root to the project root directory
   server: {
     host: true,
-    port: 5173,
+    port: 3000,
   },
   build: {
     outDir: 'dist', // Output to dist folder in root
