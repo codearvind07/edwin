@@ -206,8 +206,8 @@ export const RequestConsultationPage = () => {
                       <div className="ml-4">
                         <h3 className="font-display text-lg font-semibold">Email Us</h3>
                         <p className="mt-1 text-white/80">
-                          <a href="mailto:advisory@edwincorporate.com" className="hover:text-brand-gold transition-colors">
-                            advisory@edwincorporate.com
+                          <a href="mailto:lawfirmedwincoe@gmail.com" className="hover:text-brand-gold transition-colors">
+                            lawfirmedwincoe@gmail.com
                           </a>
                         </p>
                       </div>
@@ -234,12 +234,8 @@ export const RequestConsultationPage = () => {
                     <h3 className="font-display text-lg font-semibold">Office Hours</h3>
                     <div className="mt-2 space-y-2 text-white/80">
                       <div className="flex justify-between">
-                        <span>Monday - Friday</span>
-                        <span>9:00 AM - 6:00 PM</span>
-                      </div>
-                      <div className="flex justify-between">
-                        <span>Saturday</span>
-                        <span>10:00 AM - 2:00 PM</span>
+                        <span>Monday - Saturday</span>
+                        <span>10:00 AM - 7:00 PM</span>
                       </div>
                       <div className="flex justify-between">
                         <span>Sunday</span>
