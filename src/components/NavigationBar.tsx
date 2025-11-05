@@ -23,27 +23,32 @@ export const NavigationBar = () => {
     >
       <div className="mx-auto max-w-7xl px-6">
         <div
-          className="flex items-center justify-between rounded-xl bg-white/90 px-6 py-4 shadow-glow backdrop-blur-md border border-white/60"
+          className="flex items-center justify-between px-6 py-4 bg-white shadow-md"
         >
           <a
             href="#home"
             className="flex items-center gap-3 text-brand-navy"
             onClick={() => setOpen(false)}
           >
-            <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-brand-blue via-brand-royal to-brand-navy text-white shadow-lg">
+            <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-brand-navy text-white">
               <ShieldCheck className="h-6 w-6" />
             </div>
             <div>
-              <p className="font-display text-lg leading-none">Edwin Corporate</p>
-              <p className="text-xs uppercase tracking-[0.3em] text-brand-sky">
+              <p className="font-display text-xl font-semibold text-brand-navy">Edwin Corporate</p>
+              <p className="text-sm text-brand-royal">
                 Law Firm
               </p>
             </div>
           </a>
 
-          <div className="hidden lg:flex items-center gap-2 rounded-full bg-brand-navy px-5 py-2 text-white shadow-glow">
-            <PhoneCall className="h-4 w-4" />
-            <span className="text-sm font-semibold">+91 98765 43210</span>
+          <div className="hidden lg:flex items-center gap-6">
+            <a href="#services" className="text-brand-navy hover:text-brand-gold transition-colors">Services</a>
+            <a href="#about" className="text-brand-navy hover:text-brand-gold transition-colors">About Us</a>
+            <a href="#contact" className="text-brand-navy hover:text-brand-gold transition-colors">Contact</a>
+            <div className="flex items-center gap-2 bg-brand-gold px-5 py-2 rounded text-brand-navy hover:bg-brand-navy hover:text-white transition-all">
+              <PhoneCall className="h-4 w-4" />
+              <span className="text-sm font-semibold">+91 98765 43210</span>
+            </div>
           </div>
 
           {/* Removed the mobile menu button since there are no navigation items */}

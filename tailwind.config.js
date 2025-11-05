@@ -7,17 +7,18 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        display: ['"Playfair Display"', 'serif'],
-        sans: ['"Inter"', 'ui-sans-serif', 'system-ui'],
+        display: ['Poppins', 'sans-serif'],
+        sans: ['Poppins', 'ui-sans-serif', 'system-ui'],
       },
       colors: {
         brand: {
-          navy: '#101b3d',
-          blue: '#1f3c88',
-          royal: '#4056a1',
-          sky: '#8fa8ff',
-          sand: '#f6f4f1',
-          gold: '#f2c94c',
+          navy: '#0B1B3F',
+          blue: '#142F6B',
+          royal: '#1E4D9C',
+          sky: '#3B82F6',
+          sand: '#FFFFFF',
+          gold: '#FFB800',
+          gray: '#F3F4F6',
         },
       },
       boxShadow: {
